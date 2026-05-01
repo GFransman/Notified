@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Delete Account – Notified</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #f4f6f8;
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background: #008080;
+      color: #fff;
+      padding: 18px 24px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    header h1 { font-size: 1.25rem; font-weight: 600; }
+
+    main {
+      flex: 1;
+      max-width: 640px;
+      width: 100%;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 32px;
+      box-shadow: 0 2px 12px rgba(0,0,0,.08);
+    }
+
+    h2 { font-size: 1.4rem; margin-bottom: 12px; color: #111; }
+
+    p { line-height: 1.65; color: #555; margin-bottom: 16px; }
+
+    .steps {
+      margin: 20px 0;
+      padding-left: 0;
+      list-style: none;
+      counter-reset: step;
+    }
+
+    .steps li {
+      counter-increment: step;
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      padding: 12px 0;
+      border-bottom: 1px solid #f0f0f0;
+    }
+
+    .steps li:last-child { border-bottom: none; }
+
+    .steps li::before {
+      content: counter(step);
+      min-width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: #008080;
+      color: #fff;
+      font-size: .85rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .divider {
+      border: none;
+      border-top: 1px solid #eee;
+      margin: 28px 0;
+    }
+
+    .email-block {
+      background: #f0fafa;
+      border-left: 4px solid #008080;
+      border-radius: 6px;
+      padding: 16px 20px;
+      margin-top: 8px;
+    }
+
+    .email-block p { margin: 0 0 8px; }
+
+    .email-block a {
+      color: #008080;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .email-block a:hover { text-decoration: underline; }
+
+    .warning {
+      background: #fff8e1;
+      border-left: 4px solid #f9a825;
+      border-radius: 6px;
+      padding: 14px 18px;
+      margin-top: 20px;
+      font-size: .92rem;
+      color: #555;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: .8rem;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+       stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/>
+    <path d="M13.73 21a2 2 0 0 1-3.46 0"/>
+  </svg>
+  <h1>Notified</h1>
+</header>
+
+<main>
+  <div class="card">
+    <h2>Delete Your Account</h2>
+    <p>
+      You can delete your Notified account directly inside the app. Deleting your account
+      permanently removes your profile and all associated data from our servers.
+    </p>
+
+    <ol class="steps">
+      <li>Open the <strong>Notified</strong> app on your device.</li>
+      <li>Tap the <strong>menu icon</strong> (☰) to open the navigation drawer.</li>
+      <li>Tap <strong>Settings</strong>.</li>
+      <li>Scroll down to the <strong>Delete account</strong> section.</li>
+      <li>Tap <strong>Delete my account</strong> and confirm when prompted.</li>
+    </ol>
+
+    <div class="warning">
+      <strong>Note:</strong> Account deletion is permanent and cannot be undone.
+      All your data, preferences, and subscription history will be removed immediately.
+    </div>
+
+    <hr class="divider" />
+
+    <h2>Can't access the app?</h2>
+    <p>
+      If you no longer have access to the app or need additional assistance,
+      send us an email and we will delete your account within <strong>7 business days</strong>.
+    </p>
+
+    <div class="email-block">
+      <p>Email us at:</p>
+      <a href="mailto:info@pytbytesoft.co.za?subject=Account%20Deletion%20Request%20%E2%80%93%20Notified">
+        info@pytbytesoft.co.za
+      </a>
+      <p style="margin-top:8px; font-size:.9rem; color:#666;">
+        Please include the email address associated with your Notified account.
+      </p>
+    </div>
+  </div>
+</main>
+
+<footer>
+  &copy; 2024 Pytbyte Software. All rights reserved.
+</footer>
+
+</body>
+</html>
